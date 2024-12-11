@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">JIIT360</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_welcome_page">WelcomePage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="proceed_to_checkout">Proceed to Checkout</string>
+    <string name="your_cafeteria_cart">Your Cafeteria Cart</string>
+</resources>

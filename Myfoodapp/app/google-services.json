@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "971118345970",
+    "project_id": "conn-facd2",
+    "storage_bucket": "conn-facd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971118345970:android:a72a271a2f652fed591a6b",
+        "android_client_info": {
+          "package_name": "com.example.myfoodapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt4BGD1e8xEJIHhlopyGNcDf_ewo1Qea8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

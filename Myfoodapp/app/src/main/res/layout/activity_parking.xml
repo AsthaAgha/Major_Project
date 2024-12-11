@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <!-- Cafe Card Layout -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_cafe"
+        android:layout_width="250sp"
+        android:layout_height="100sp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/teal"
+        android:onClick="onCafeClick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REQUEST TO ENTER"
+            android:textColor="@color/white"
+            android:textSize="22.6sp"
+            android:textStyle="normal"
+            android:typeface="serif"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="16dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Parking Card Layout -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_parking"
+        android:layout_width="250sp"
+        android:layout_height="100sp"
+        android:layout_below="@id/card_cafe"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/teal"
+        android:onClick="onParkingClick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REQUEST TO EXIT"
+            android:textColor="@color/white"
+            android:textSize="22.6sp"
+            android:textStyle="normal"
+            android:typeface="serif"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="16dp" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

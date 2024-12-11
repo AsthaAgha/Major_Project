@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/card"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/Card"
+            android:padding="11dp">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:id="@+id/imgFood"
+                android:background="@color/card"
+                android:contentDescription="Food Image"
+                tools:srcCompat="@drawable/samosa"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Food"
+                    android:textColor="@color/teal"
+                    android:id="@+id/iName"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/decreaseButton"
+                        android:layout_width="59dp"
+                        android:layout_height="33dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp"
+                        android:text="-"
+                        android:backgroundTint="@color/teal"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/quantityTextView"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_toStartOf="@id/increaseButton"
+                        android:layout_toEndOf="@id/decreaseButton"
+                        android:text="0"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/increaseButton"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="@color/teal"
+                        android:textColor="@color/white"
+                        android:text="+"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/rupeeSign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹  "
+                        android:textColor="@color/teal"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/iPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price :"
+                        android:textColor="@color/teal"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
